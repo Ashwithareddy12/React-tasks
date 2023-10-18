@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .striped-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+h1{
+  text-align: center;
+}
+
+.striped-table th,
+.striped-table td {
+  border: 1px solid black;
+  padding: 8px;
+}
+
+.striped-table th {
+  background-color: #ccc;
+}
+
+.striped-table .odd {
+  background-color: #fff;
+}
+
+.striped-table .even {
+  background-color: #eee;
+}
+
+@media (max-width: 768px) {
+  .striped-table {
+    border: 0;
+  }
+
+  .striped-table th,
+  .striped-table td {
+    border: 0;
+  }
+
+  .striped-table th:before {
+    content: "";
+    display: block;
+    height: 20px;
+  }
+
+  .striped-table th:first-child {
+    display: none;
+  }
+
+  .striped-table td {
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+
+  .striped-table td:before {
+    content: attr(data-th);
+    display: block;
+    font-weight: bold;
+    padding-bottom: 8px;
+  }
+}
+    </style>
+</head>
+<body>
+  <h1>Index Page</h1>
+  <h1>Chitti Manogna</h1>
+  <h1>21bce7246</h1>
+    <table class="striped-table" border= 2px>
+        <thead>
+          <tr>
+            <th>Task Number</th>
+            <th>Repository Link</th>
+            <th>Deployment Link</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="odd">
+            <td>word counter</td>
+            <td><a href="https://github.com/Ashwithareddy12/word-counter">task1</a></td>
+            <td><a href= "https://word-counter-murex.vercel.app/"> task1</a></td>
+          </tr>
+          <tr class="even">
+            <td>Calculator</td>
+            <td><a href="https://github.com/Ashwithareddy12/calculator">task2</a></td>
+            <td><a href="https://calculator-sooty-gamma.vercel.app/">task2</a></td>
+          </tr>
+          <tr class="odd">
+            <td>Color Picker</td>
+            <td><a href="https://github.com/Ashwithareddy12/color-picker">task3</a></td>
+            <td><a href="https://color-picker-five-taupe.vercel.app/">task3</a></td>
+          </tr>
+          <tr class="odd">
+            <td>Dummy Data</td>
+            <td><a href="https://github.com/Ashwithareddy12/Dummy-data">task4</a></td>
+            <td><a href="https://dummy-data-delta.vercel.app/">task4</a></td>
+          </tr>
+          <tr class="odd">
+            <td>Age Calculator</td>
+            <td><a href="https://github.com/Ashwithareddy12/simple-calculator">task5</a></td>
+            <td><a href="https://calculator-ksij.vercel.app/">task5</a></td>  
+          </tr>
+          <tr class="odd">
+            <td>Portfolio</td>
+            <td><a href="https://github.com/Ashwithareddy12/portfolio">task6</a></td>
+            <td><a href="https://portfolio-ashwitha-reddys-projects.vercel.app/">task6</a></td>
+          </tr>
+        </tbody>
+      </table>
+</body>
+</html>
